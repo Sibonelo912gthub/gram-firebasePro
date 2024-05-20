@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/favicon.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="mobile-styles.css" />
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0fba6da19b.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0fba6da19b.js" crossorigin="anonymous"></script>
+    <title>Instagram</title>
+  </head>
+
+  <body>
+
+
+    <div class=" mx-3 more ">
+      <svg aria-label="Settings" class="_ab6-"  height="24" role="img" viewBox="0 0 24 24" width="24"><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="3" x2="21" y1="4" y2="4"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="3" x2="21" y1="12" y2="12"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="3" x2="21" y1="20" y2="20"></line></svg>
+      <div class="option-title px-3 fw-bold" >More</div> 
+    </div>
+      
+    <div class="mobile-devices px-4"> 
+      <div class="mob-options mt-2 py-2 home-page2">
+        <svg aria-label="Home" class="_ab6-" color="rgb(245, 245, 245)" fill="rgb(245, 245, 245)" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M9.005 16.545a2.997 2.997 0 0 1 2.997-2.997A2.997 2.997 0 0 1 15 16.545V22h7V11.543L12 2 2 11.543V22h7.005Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path></svg>
+      </div>
+      <div class="mob-options mt-2 py-2">
+        <svg aria-label="Explore" class="_ab6-" color="rgb(245, 245, 245)" fill="rgb(245, 245, 245)" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="m13.173 13.164 1.491-3.829-3.83 1.49ZM12.001.5a11.5 11.5 0 1 0 11.5 11.5A11.513 11.513 0 0 0 12.001.5Zm5.35 7.443-2.478 6.369a1 1 0 0 1-.57.569l-6.36 2.47a1 1 0 0 1-1.294-1.294l2.48-6.369a1 1 0 0 1 .57-.569l6.359-2.47a1 1 0 0 1 1.294 1.294Z"></path></svg>
+      </div>
+      <div class="mob-options mt-2 py-2">
+        <svg aria-label="Reels" class="_ab6-" color="rgb(245, 245, 245)" fill="rgb(245, 245, 245)" height="24" role="img" viewBox="0 0 24 24" width="24"><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="2.049" x2="21.95" y1="7.002" y2="7.002"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="13.504" x2="16.362" y1="2.001" y2="7.002"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="7.207" x2="10.002" y1="2.11" y2="7.002"></line><path d="M2 12.001v3.449c0 2.849.698 4.006 1.606 4.945.94.908 2.098 1.607 4.946 1.607h6.896c2.848 0 4.006-.699 4.946-1.607.908-.939 1.606-2.096 1.606-4.945V8.552c0-2.848-.698-4.006-1.606-4.945C19.454 2.699 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.546 2 5.704 2 8.552Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M9.763 17.664a.908.908 0 0 1-.454-.787V11.63a.909.909 0 0 1 1.364-.788l4.545 2.624a.909.909 0 0 1 0 1.575l-4.545 2.624a.91.91 0 0 1-.91 0Z" fill-rule="evenodd"></path></svg>
+      </div>
+      <div class="mob-options mt-2  py-2">
+        <svg aria-label="New post" class="_ab6- upload" color="rgb(245, 245, 245)" fill="rgb(245, 245, 245)" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M2 12v3.45c0 2.849.698 4.005 1.606 4.944.94.909 2.098 1.608 4.946 1.608h6.896c2.848 0 4.006-.7 4.946-1.608C21.302 19.455 22 18.3 22 15.45V8.552c0-2.849-.698-4.006-1.606-4.945C19.454 2.7 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.547 2 5.703 2 8.552Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="6.545" x2="17.455" y1="12.001" y2="12.001"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12.003" x2="12.003" y1="6.545" y2="17.455"></line></svg>
+      </div>
+      <div class="mob-options mt-2 py-2">
+        <svg aria-label="Direct" class="_ab6-" color="rgb(245, 245, 245)" fill="rgb(245, 245, 245)" height="24" role="img" viewBox="0 0 24 24" width="24"><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line><polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon></svg>
+      </div> 
+      <div class="mob-options mt-2 py-2 profile-toggler2 ">
+        <div class="profile-pic m-0">
+          <img alt=" profile picture" data-testid="user-avatar" draggable="false" src="./assets/profile.jpg">
+        </div> 
+       </div>
+       
+    </div>
+
+        <!-- see if you can design below here -->
+    <div style="background-color: #eee;">
+    <div id="firebaseui-auth-container" class="pt-4" tyle="background-color: #eee;">
+
+      <div class="second-content" style="font-weight: 500; display: flex; align-items: center; justify-content: center;">
+        Zaio Instagram Project by<div style="margin-left: 5px;"></div>
+        <a href="https://sibonelo-portfolio.vercel.app/" target="_blank" style="font-weight: 500;">Sibonelo Mbambo</a>
+      </div>
+    </div>
+   
+    </div>
+
+    <div id="app">
+
+      <!-- Post options -->
+      <div class="option-container d-none" style="cursor: pointer;">
+        <!-- <div class="close-options"  >X</div> -->
+        <div class="my-options border-radius bg-light text-center">
+        <div class="option edit"  >Edit</div>
+        <div class="option delete">Delete</div>
+        <div class="option "  >Report</div>
+        <div class="option "  >Unfollow</div>
+        <div class="option "  >Go to post</div>
+        <div class="option "  >Share to...</div>
+        <div class="option "  >Copy link</div>
+        <div class="option "  >Embed</div>
+        <div class="option cancel-option">Cancel</div>
+        </div> 
+      </div>
+      
+      <!-- upload modal -->
+      <div class="upload-container d-none">
+
+        <div class="close-button">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2WwQ6DMAxD/ROJtv//HHqCwz4HLp00EAMnNaq0YSknar02UBPg1r/KAZRa3uAfIn4DMAKYa70APAPQtL98mN41kTv3unbrH7JgBv4NSoNt06qZaNuZ58GAo3AZNAKXQ5n3Np08y1zDlY5OJT9pFi6FsvBLoCw4knDyVsvglvi4muHe4zoZEQ6ZeD1UJJFkcEvEoAReev0WS69BwHZGl0giNfm97jI0rAn9t35AC0Zz72ONUPbuAAAAAElFTkSuQmCC">
+        </div>
+
+         <div class="upload-content border-raduis">
+          <form class="border-light border p-5 border-radius myForm" >
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label text-light" style="display: flex;justify-content: center; font-weight: bold;">Upload image file</label>
+              <input type="file" class="form-control" name="photo" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label text-light" style="display: flex;justify-content: center; font-weight: bold;">Caption</label>
+              <input type="text" placeholder="Caption" name="caption" class="form-control" id="exampleInputPassword1">
+            </div>
+      
+            <div style="display: flex;justify-content: center;">
+
+              <button type="submit" id="upload-button form-control" class="btn btn-info " style="width: 100%; font-weight: bold;">Upload</button>
+            </div>
+         <div class="updateMssg">      
+         </div>
+          </form>    
+          </div>        
+      </div>
+
+      <!-- post Edit modal -->
+      <div class="upload-container2 d-none">
+                
+        <div class="close-button2">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAtElEQVR4nO2WwQ6DMAxD/ROJtv//HHqCwz4HLp00EAMnNaq0YSknar02UBPg1r/KAZRa3uAfIn4DMAKYa70APAPQtL98mN41kTv3unbrH7JgBv4NSoNt06qZaNuZ58GAo3AZNAKXQ5n3Np08y1zDlY5OJT9pFi6FsvBLoCw4knDyVsvglvi4muHe4zoZEQ6ZeD1UJJFkcEvEoAReev0WS69BwHZGl0giNfm97jI0rAn9t35AC0Zz72ONUPbuAAAAAElFTkSuQmCC">
+        </div>
+
+         <div class="upload-content2 border-raduis">
+          <form class="border-light border p-5 border-radius myForm2" >
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label text-light" style="display: flex;justify-content: center; font-weight: bold;">Edite image</label>
+              <input type="file" class="form-control" name="photo" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label text-light" style="display: flex;justify-content: center; font-weight: bold;">Edit Caption</label>
+              <input type="text" placeholder="Enter your caption" name="caption" class="form-control" id="exampleInputPassword1">
+            </div>
+      
+              <div style="display: flex;justify-content: center;">
+
+              <button type="submit" id="upload-button form-control" class="btn btn-info " style="width: 100%; font-weight: bold;">Upload</button>
+              </div>
+         <div class="update-msg">      
+         </div>
+          </form>    
+          </div>        
+      </div>
+
+        <div class="main-container">
+          <div class="navbar  navbar-mobile2">
+
+              <div class="navbar-inner">
+                <div class="logo2">
+                  <img
+                    alt="Instagram"
+                    src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+                    srcset="
+                      https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png 2x
+                    "
+                  />
+                </div>
+
+                <div class="mob-nav-content">
+                  <div class="search-bar ">
+                  <div class="search-bar-inner">
+                    <span class="search-icon"></span>
+                    <span class="search-text">Search</span>
+                  </div>
+                </div>
+
+                <div class="navbar-icons px-3 ">
+                  <div class="navbar-icons-inner">
+                    <div class="">
+                      <a class="_0ZPOP kIKUG" href="/accounts/activity/"
+                        ><svg
+                          aria-label="Activity Feed"
+                          class="_8-yf5"
+                          fill="#262626"
+                          height="22"
+                          viewBox="0 0 48 48"
+                          width="22"
+                        >
+                          <path
+                            d="M34.6 6.1c5.7 0 10.4 5.2 10.4 11.5 0 6.8-5.9 11-11.5 16S25 41.3 24 41.9c-1.1-.7-4.7-4-9.5-8.3-5.7-5-11.5-9.2-11.5-16C3 11.3 7.7 6.1 13.4 6.1c4.2 0 6.5 2 8.1 4.3 1.9 2.6 2.2 3.9 2.5 3.9.3 0 .6-1.3 2.5-3.9 1.6-2.3 3.9-4.3 8.1-4.3m0-3c-4.5 0-7.9 1.8-10.6 5.6-2.7-3.7-6.1-5.5-10.6-5.5C6 3.1 0 9.6 0 17.6c0 7.3 5.4 12 10.6 16.5.6.5 1.3 1.1 1.9 1.7l2.3 2c4.4 3.9 6.6 5.9 7.6 6.5.5.3 1.1.5 1.6.5.6 0 1.1-.2 1.6-.5 1-.6 2.8-2.2 7.8-6.8l2-1.8c.7-.6 1.3-1.2 2-1.7C42.7 29.6 48 25 48 17.6c0-8-6-14.5-13.4-14.5z"
+                          ></path></svg
+                      ></a>
+                      <div class="">
+                        <div class="poA5q" style="margin-left: "></div>
+                      </div>
+                    </div>
+                    
+                    <div>
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
+          </div>
+            
+           
+        </div>
+
+        <!-- main part  to be worked -->
+      <main>
+        <!-- this side nav has to stand alone -->
+        <div class="side-nav ">
+          
+           <div class="big-devices ">
+            <div class="logo px-3 py-5">
+              <img
+                alt="Instagram"
+                src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+                srcset="
+                  https://www.instagram.com/static/images/web/mobile_nav_type_logo-2x.png/1b47f9d0e595.png 2x
+                "
+              />
+            </div>
+          <div class="mob-options2 mx-3 home-page">
+            <svg aria-label="Home" class="_ab6- text-dark " color="rgb(245, 245, 245)" fill="rgb(245, 245, 245)" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M9.005 16.545a2.997 2.997 0 0 1 2.997-2.997A2.997 2.997 0 0 1 15 16.545V22h7V11.543L12 2 2 11.543V22h7.005Z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></path></svg>
+            <div class="option-title px-3 fw-bold">Home</div>
+          </div>
+
+          <div class="mob-options2 mt-4 mx-3">
+            <svg aria-label="Search" class="_ab6- text-dark" color="rgb(245, 245, 245)" fill="rgb(245, 245, 245)" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M19 10.5A8.5 8.5 0 1 1 10.5 2a8.5 8.5 0 0 1 8.5 8.5Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="16.511" x2="22" y1="16.511" y2="22"></line></svg>
+            <div class="option-title px-3 fw-bold">Search</div>
+          </div>
+
+          <div class="mob-options2 mt-4 mx-3">
+            <svg aria-label="Explore" class="_ab6- text-dark" height="24" role="img" viewBox="0 0 24 24" width="24"><polygon fill="none" points="13.941 13.953 7.581 16.424 10.06 10.056 16.42 7.585 13.941 13.953" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></polygon><polygon fill-rule="evenodd" points="10.06 10.056 13.949 13.945 7.581 16.424 10.06 10.056"></polygon><circle cx="12.001" cy="12.005" fill="none" r="10.5" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></circle></svg>
+            <div class="option-title px-3 fw-bold">Explore</div>
+          </div>
+         
+          <div class="mob-options2 mt-4 mx-3">
+            <svg aria-label="Reels" class="_ab6- text-dark" color="rgb(245, 245, 245)" fill="rgb(245, 245, 245)" height="24" role="img" viewBox="0 0 24 24" width="24"><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="2.049" x2="21.95" y1="7.002" y2="7.002"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="13.504" x2="16.362" y1="2.001" y2="7.002"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="7.207" x2="10.002" y1="2.11" y2="7.002"></line><path d="M2 12.001v3.449c0 2.849.698 4.006 1.606 4.945.94.908 2.098 1.607 4.946 1.607h6.896c2.848 0 4.006-.699 4.946-1.607.908-.939 1.606-2.096 1.606-4.945V8.552c0-2.848-.698-4.006-1.606-4.945C19.454 2.699 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.546 2 5.704 2 8.552Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M9.763 17.664a.908.908 0 0 1-.454-.787V11.63a.909.909 0 0 1 1.364-.788l4.545 2.624a.909.909 0 0 1 0 1.575l-4.545 2.624a.91.91 0 0 1-.91 0Z" fill-rule="evenodd"></path></svg>
+            <div class="option-title px-3 fw-bold">Reels</div>
+          </div>
+
+          <div class="mob-options2 mt-4 create mx-3 ">
+            <svg aria-label="New post" class="_ab6- text-dark " style=" 
+            border-radius: none;
+            color: white;
+            border: none;
+           color="rgb(245, 245, 245)" fill="rgb(245, 245, 245)" height="24" role="img" viewBox="0 0 24 24" width="24"><path d="M2 12v3.45c0 2.849.698 4.005 1.606 4.944.94.909 2.098 1.608 4.946 1.608h6.896c2.848 0 4.006-.7 4.946-1.608C21.302 19.455 22 18.3 22 15.45V8.552c0-2.849-.698-4.006-1.606-4.945C19.454 2.7 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.547 2 5.703 2 8.552Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="6.545" x2="17.455" y1="12.001" y2="12.001"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="12.003" x2="12.003" y1="6.545" y2="17.455"></line></svg>
+            <div class="option-title px-3">Create</div>
+          </div>
+
+
+          <div class="mob-options2 mt-4 mx-3 profile-toggler" style="margin-bottom:;">
+            <div class="profile-pic m-0">
+              <img alt="imharjotsingh's profile picture" data-testid="user-avatar" draggable="false" src="https://avatars.githubusercontent.com/u/137880392?v=4">
+            </div> 
+            <div class="option-title mx-3">Profile</div>
+          </div>
+          <div class="log" style="display: flex;">
+            
+            <div class=" fw-bold logout "><button type="button" class="btn btn-secondary logout mx-2 d-flex" style="color: black; border:none; font-weight: 500;background-color:#fafafa;">Logout</button></div>
+          </div>
+
+
+
+
+
+          
+          <!-- <div class="mob-options2 mt-4 mx-3">
+            <svg aria-label="Direct" class="_ab6- text-dark" color="rgb(245, 245, 245)" fill="rgb(245, 245, 245)" height="24" role="img" viewBox="0 0 24 24" width="24"><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="22" x2="9.218" y1="3" y2="10.083"></line><polygon fill="none" points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334" stroke="currentColor" stroke-linejoin="round" stroke-width="2"></polygon></svg>
+            <div class="option-title px-3">Messages</div>
+          </div>  -->
+
+         
+
+          <!-- 
+          <div class="mob-options2 mt-4  mx-3">
+            <svg aria-label="Notifications" class="x1lliihq x1n2onr6 text-dark"  height="24" role="img" viewBox="0 0 24 24" width="24"><title>Notifications</title><path d="M16.792 3.904A4.989 4.989 0 0 1 21.5 9.122c0 3.072-2.652 4.959-5.197 7.222-2.512 2.243-3.865 3.469-4.303 3.752-.477-.309-2.143-1.823-4.303-3.752C5.141 14.072 2.5 12.167 2.5 9.122a4.989 4.989 0 0 1 4.708-5.218 4.21 4.21 0 0 1 3.675 1.941c.84 1.175.98 1.763 1.12 1.763s.278-.588 1.11-1.766a4.17 4.17 0 0 1 3.679-1.938m0-2a6.04 6.04 0 0 0-4.797 2.127 6.052 6.052 0 0 0-4.787-2.127A6.985 6.985 0 0 0 .5 9.122c0 3.61 2.55 5.827 5.015 7.97.283.246.569.494.853.747l1.027.918a44.998 44.998 0 0 0 3.518 3.018 2 2 0 0 0 2.174 0 45.263 45.263 0 0 0 3.626-3.115l.922-.824c.293-.26.59-.519.885-.774 2.334-2.025 4.98-4.32 4.98-7.94a6.985 6.985 0 0 0-6.708-7.218Z"></path></svg>
+            <div class="option-title px-3">Notifications</div>
+          </div>  -->
+
+          
+        </div>
+        
+        </div>
+
+        <!-- main part must be display of flex: -->
+        <div class="content-container ">
+
+         
+          <!-- this is fine -->
+          <div class="content">
+            <div class="profile-page pt-4">
+              <div class="profile-container border-bottom border-secondary">
+              <div class="profile-header mb-5 ">
+                <div class="userimg ">
+                  <img src="https://avatars.githubusercontent.com/u/137880392?v=4" class="img-fluid my-profile-pic" alt="">
+                </div>
+                <div class="profile-details2 fw-bold">
+                  <div class="first-line">
+                    <div class="username-profile mx-2"></div>
+
+                    <div class="user-profile">
+                      <div class=" mx-2 "><a type="button" class="btn btn-secondary px-2">Edit Profile</a></div>
+                    </div>
+                    
+                    <div class=" mx-2 "><a type="button" class="btn btn-secondary px-2">View Archives</a></div>
+                  </div>
+                  <div class="second-line mt-3">
+                    <div class=" mx-2"> 79 Posts</div>
+                    <div class=" mx-2">12k Followers</div>
+                    <div class=" mx-2">6k Following</div>
+                  </div>
+                  <div class="third-line mt-3">
+                    <div class="name-profile fw-bold mx-2"></div>
+                    <div class=" fw-bold logout "><button type="button" class="btn btn-secondary logout mx-2 d-flex">Logout</button></div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="user-posts">
+              
+            </div>
+            <div class="profile-footer py-4">
+              <div class="footer-first-line fw-bold">
+                <div class="px-2">Meta</div>
+                <div class="px-2">About</div>
+                <div class="px-2">Bog</div>
+                <div class="px-2">Jobs</div>
+                <div class="px-2">Help</div>
+                <div class="px-2">API</div>
+                <div class="px-2">Privacy</div>
+                <div class="px-2">Terms</div>
+                <div class="px-2">Locations</div>
+                <div class="px-2">Instagram Lite</div>
+                <div class="px-2">Treads</div>
+                <div class="px-2">Contact uploading and Non-users</div>
+                <div class="px-2">Meta Verified</div>
+              </div>
+              <div class="footer-second-line pt-3">
+                
+                <div class="second-content">
+                  Zaio Instagram Project by
+                  <a href="https://sibonelo-portfolio.vercel.app/" target="_blank">Sibonelo Mbambo</a>
+                </div>
+              </div>
+            </div>
+            </div>
+
+
+            <!-- stories -->
+            <div class="page-content">
+              <div class="stories">
+              <div class="stories-inner">
+                <div class="story">
+                  <img
+                    class="story-image"
+                    alt="akhilboddu's profile picture"
+                    data-testid="user-avatar"
+                    draggable="false"
+                    src="assets/akhil.png"
+                  />
+                  <div class="story-border"></div>
+                  <span class="story-text">akhilboddu</span>
+                </div>
+                <div class="story">
+                  <img
+                    class="story-image"
+                    alt="akhilboddu's profile picture"
+                    data-testid="user-avatar"
+                    draggable="false"
+                    src="assets/akhil.png"
+                  />
+                  <div class="story-border"></div>
+                  <span class="story-text"></span>
+                </div>
+                <div class="story">
+                  <img
+                    class="story-image"
+                    alt="akhilboddu's profile picture"
+                    data-testid="user-avatar"
+                    draggable="false"
+                    src="assets/akhil.png"
+                  />
+                  <div class="story-border"></div>
+                  <span class="story-text">jayshetty</span>
+                </div>
+                <div class="story">
+                  <img
+                    class="story-image"
+                    alt="akhilboddu's profile picture"
+                    data-testid="user-avatar"
+                    draggable="false"
+                    src="assets/akhil.png"
+                  />
+                  <div class="story-border"></div>
+                  <span class="story-text">cleverqazi</span>
+                </div>
+
+                <div class="story">
+                  <img
+                    class="story-image"
+                    alt="akhilboddu's profile picture"
+                    data-testid="user-avatar"
+                    draggable="false"
+                    src="assets/akhil.png"
+                  />
+                  <div class="story-border"></div>
+                  <span class="story-text">poojahegde</span>
+                </div>
+                <div class="story">
+                  <img
+                    class="story-image"
+                    alt="akhilboddu's profile picture"
+                    data-testid="user-avatar"
+                    draggable="false"
+                    src="assets/akhil.png"
+                  />
+                  <div class="story-border"></div>
+                  <span class="story-text">can.shecode</span>
+                </div>
+                <div class="story">
+                  <img
+                    class="story-image"
+                    alt="akhilboddu's profile picture"
+                    data-testid="user-avatar"
+                    draggable="false"
+                    src="assets/akhil.png"
+                  />
+                  <div class="story-border"></div>
+                  <span class="story-text">anushkasharma</span>
+                </div>
+                <div class="story">
+                  <img
+                    class="story-image"
+                    alt="akhilboddu's profile picture"
+                    data-testid="user-avatar"
+                    draggable="false"
+                    src="assets/akhil.png"
+                  />
+                  <div class="story-border"></div>
+                  <span class="story-text">tech.unicorn</span>
+                </div>
+                <div class="story">
+                  <img
+                    class="story-image"
+                    alt="akhilboddu's profile picture"
+                    data-testid="user-avatar"
+                    draggable="false"
+                    src="assets/akhil.png"
+                  />
+                  <div class="story-border"></div>
+                  <span class="story-text">lamborghini</span>
+                </div>
+                <div class="story">
+                  <img
+                    class="story-image"
+                    alt="akhilboddu's profile picture"
+                    data-testid="user-avatar"
+                    draggable="false"
+                    src="assets/akhil.png"
+                  />
+                  <div class="story-border"></div>
+                  <span class="story-text">garyvee</span>
+                </div>
+              </div>
+            </div>
+            <div class="posts">
+
+
+            </div>
+            </div>
+            
+          </div>
+
+
+          <!-- sidebar items -->
+          <div class="sidebar side-content">
+            <div class="my-profile-details">
+              <div class="profile-details-pic">
+                <img
+                  class="story-image"
+                  alt="akhilboddu's profile picture"
+                  data-testid="user-avatar"
+                  draggable="false"
+                  src="https://avatars.githubusercontent.com/u/137880392?v=4"
+                />
+              </div>
+              <div class="user-details">
+                <span class="username"></span>
+                <span class="name"></span>
+              </div>
+            </div>
+            <div class="suggestions">
+              <div class="suggestions-header">
+                <span class="title">Suggestions for you</span>
+                <a class="see-all-btn">See all</a>
+              </div>
+              <div class="suggestion">
+                <div class="suggestion-details">
+                  <div class="suggestion-pic">
+                    <img
+                      alt="imharjotsingh's profile picture"
+                      data-testid="user-avatar"
+                      draggable="false"
+                      src="assets/akhil.png"
+                    />
+                  </div>
+                  <div class="suggestion-profile-details">
+                    <span class="profile-name">imharjot</span>
+                    <span class="text-muted">New to instagram</span>
+                  </div>
+                </div>
+                <a class="follow-btn">Follow</a>
+              </div>
+              <div class="suggestion">
+                <div class="suggestion-details">
+                  <div class="suggestion-pic">
+                    <img
+                      alt="imharjotsingh's profile picture"
+                      data-testid="user-avatar"
+                      draggable="false"
+                      src="assets/akhil.png"
+                    />
+                  </div>
+                  <div class="suggestion-profile-details">
+                    <span class="profile-name">imharjot</span>
+                    <span class="text-muted">New to instagram</span>
+                  </div>
+                </div>
+                <a class="follow-btn">Follow</a>
+              </div>
+              <div class="suggestion">
+                <div class="suggestion-details">
+                  <div class="suggestion-pic">
+                    <img
+                      alt="imharjotsingh's profile picture"
+                      data-testid="user-avatar"
+                      draggable="false"
+                      src="assets/akhil.png"
+                    />
+                  </div>
+                  <div class="suggestion-profile-details">
+                    <span class="profile-name">imharjot</span>
+                    <span class="text-muted">New to instagram</span>
+                  </div>
+                </div>
+                <a class="follow-btn">Follow</a>
+              </div>
+              <div class="suggestion">
+                <div class="suggestion-details">
+                  <div class="suggestion-pic">
+                    <img
+                      alt="imharjotsingh's profile picture"
+                      data-testid="user-avatar"
+                      draggable="false"
+                      src="assets/akhil.png"
+                    />
+                  </div>
+                  <div class="suggestion-profile-details">
+                    <span class="profile-name">imharjot</span>
+                    <span class="text-muted">New to instagram</span>
+                  </div>
+                </div>
+                <a class="follow-btn">Follow</a>
+              </div>
+            </div>
+            <div class="sidebar-footer">
+            </div>
+          </div>
+
+        </div>
+      </main>
+    </div>
+    </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-storage.js"></script>
+    <!-- <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase/database.js"></script> -->
+    <script>
+
+        // Your web app's Firebase configuration
+
+        const firebaseConfig = {
+          apiKey: "AIzaSyBRyCno4y2inmJFxKtfv-kQtduKr5nO1qc",
+          authDomain: "instag-solo-project.firebaseapp.com",
+          databaseURL: "https://instag-solo-project-default-rtdb.firebaseio.com",
+          projectId: "instag-solo-project",
+          storageBucket: "instag-solo-project.appspot.com",
+          messagingSenderId: "333996509925",
+          appId: "1:333996509925:web:d00fb93890224d6b5ca20c"
+        };
+
+         <!-- Initialize Firebase -->
+        firebase.initializeApp(firebaseConfig);
+
+        const auth = firebase.auth();
+    
+        const storage = firebase.storage();
+
+        // initialise firestore
+     const db = firebase.firestore(); 
+    </script>
+    <script>
+      const mobileDevicesDiv = document.querySelector(".mobile-devices");
+
+ if (window.innerWidth >= 1024) {
+  mobileDevicesDiv.classList.add('none');
+} 
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cuid/1.3.8/browser-cuid.min.js"
+    integrity="sha512-AvtLzKgbVcTZJ0QZ3nLJoTGN2wiE/emjebM9xneyqhtEBRTsNB+8oeQGkOmyOF+gnJd7k3Zvnghs9m6EuTpTEw=="
+    crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
