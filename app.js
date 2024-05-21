@@ -550,7 +550,7 @@ class App {
               <div class="profile-area">
                 <div class="post-pic">
                   <img
-                    alt="jayshetty's profile picture"
+                    alt="profile picture"
                     class="_6q-tv"
                     data-testid="user-avatar"
                     draggable="false"
@@ -599,7 +599,7 @@ class App {
             </div>
             <div class="body">
               <img
-                alt="Photo by Jay Shetty on September 12, 2020. Image may contain: 2 people."
+                alt="Photo."
                 class="FFVAD"
                 decoding="auto"
                 sizes="614px"
