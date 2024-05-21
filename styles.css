@@ -656,7 +656,7 @@ main {
     display: none;
   }
   .logout {
-    display: none;
+    /* display: none; */
   }
   .mob-nav-content {
     display: flex;
